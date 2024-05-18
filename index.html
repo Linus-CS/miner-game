@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miner's Legacy</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stein-mine.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="src/steinmine.js" defer></script>
+    <script src="src/speicher.js" defer></script>
+    <script src="src/menu.js" defer></script>
+    <script src="src/kaufen.js" defer></script>
+    <script src="src/main.js" defer></script>
+</head>
+
+<body>
+    <div id="hauptmenu">
+        <header>
+            <div class="geld">
+                <p id="geld">30000</p>
+                <img src="bilder/münze.png">
+            </div>
+
+            <img class="banner" src="bilder/banner.png">
+            
+            <div class="pause">
+                <p id="pause">Pause zuende!</p>
+                <img src="bilder/stoppuhr.png">
+            </div>
+        </header>
+        <main>
+            <div class="box">
+                <h3>Upgrades</h3>
+                <div class="upgrade">
+                    <p class="upgrade-name">Arbeitszeit</p>
+                    <div class="kosten">
+                        <p>300</p>
+                        <img src="bilder/münze.png">
+                    </div>
+                    <p class="wert">0s</p>
+                    <img class="plus-minus" src="bilder/plus.png">
+                </div>
+                <div class="upgrade">
+                    <p class="upgrade-name">Mittagspause</p>
+                    <div class="kosten">
+                        <p>500</p>
+                        <img src="bilder/münze.png">
+                    </div>
+                    <p class="wert">200s</p>
+                    <img class="plus-minus" src="bilder/minus.png">
+                </div>
+            </div>
+
+            <div class="minen">
+                <img src="bilder/mine1.png" class="mine" id="stein-mine">
+                <img src="bilder/mine2.png" class="mine">
+            </div>
+
+            <div class="box">
+                <h3>Spitzhacken</h3>
+                <div class="spitzhacke">
+                    <p>Holzspitzhacke</p>
+                    <div class="einkaufen">
+                        <div class="kosten">
+                            <p>400</p>
+                            <img src="bilder/münze.png">
+                        </div>
+                        <img class="kaufen" src="bilder/einkaufswagen.png">
+                    </div>
+                </div>
+                <div class="spitzhacke">
+                    <p>Steinspitzhacke</p>
+                    <div class="einkaufen">
+                        <div class="kosten">
+                            <p>1000</p>
+                            <img src="bilder/münze.png">
+                        </div>
+                        <img class="kaufen" src="bilder/einkaufswagen.png">
+                    </div>
+                </div>
+                <div class="spitzhacke">
+                    <p>Eisenspitzhacke</p>
+                    <div class="einkaufen">
+                        <div class="kosten">
+                            <p>3000</p>
+                            <img src="bilder/münze.png">
+                        </div>
+                        <img class="kaufen" src="bilder/einkaufswagen.png">
+                    </div>
+                </div>
+                <div class="spitzhacke">
+                    <p>Goldspitzhacke</p>
+                    <div class="einkaufen">
+                        <div class="kosten">
+                            <p>8000</p>
+                            <img src="bilder/münze.png">
+                        </div>
+                        <img class="kaufen" src="bilder/einkaufswagen.png">
+                    </div>
+                </div>
+                <div class="spitzhacke">
+                    <p>Smaragdspitzhacke</p>
+                    <div class="einkaufen">
+                        <div class="kosten">
+                            <p>16000</p>
+                            <img src="bilder/münze.png">
+                        </div>
+                        <img class="kaufen" src="bilder/einkaufswagen.png">
+                    </div>
+                </div>
+                <div class="spitzhacke">
+                    <p>Diamantspitzhacke</p>
+                    <div class="einkaufen">
+                        <div class="kosten">
+                            <p>35000</p>
+                            <img src="bilder/münze.png">
+                        </div>
+                        <img class="kaufen" src="bilder/einkaufswagen.png">
+                    </div>
+                </div>
+                <!-- Dynamit vllt als Boost im shoop kaufen 1 , 5 oder 10er pack -->
+            </div>
+        </main>
+        <footer>
+            <img class="banner" src="bilder/banner2.png">
+            <img id="shop" src="bilder/shop.png">
+        </footer>
+    </div>
+    <div id="stein-minen-menu">
+        <link rel="preload" as="image" href="bilder/partikel.png">
+        <div class="arbeitzeit-anzeige">
+            <p id="arbeit">20</p>
+            <img src="bilder/stoppuhr.png">
+        </div>
+        <div id="stein-wand"></div>
+    </div>
+</body>
+
+</html>

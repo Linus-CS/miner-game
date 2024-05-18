@@ -1,0 +1,14 @@
+#stein-wand {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../bilder/stein-wand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.erz {
+    position: absolute;
+    width: 5%;
+    transform: translate(-50%, -50%);
+}
+

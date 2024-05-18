@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+
+body {
+  margin: 0;
+  background-color: #131835;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: relative;
+  margin-bottom: 5vh;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  margin-top: 5vh;
+}
+
+.banner {
+  width: 50vw;
+}
+
+main {
+  font-family: "Cardo", serif;
+  display: flex;
+}
+
+.minen {
+  display: flex;
+  margin: 0 auto;
+}
+
+.mine {
+  width: 20rem;
+  opacity: 0.2;
+}
+
+.box {
+  background-image: url(../bilder/schriftrolle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 20rem;
+  padding: 1rem 3rem;
+}
+
+h3 {
+  font-family: "Honk";
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #000;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.banner {
+  width: 50vw;
+}
+
+.spitzhacke {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  position: relative;
+  width: 20rem;
+}
+
+.spitzhacke p {
+  margin: 0;
+}
+
+.kaufen {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.geld {
+  position: absolute;
+  background-color: black;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.geld p {
+  color: white;
+  margin-right: 0.5rem;
+  margin: 0 1rem;
+}
+
+.geld img {
+  width: 2rem;
+}
+
+.kosten {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.upgrade {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0px;
+}
+
+.upgrade p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.upgrade-name {
+  width: 15rem;
+}
+
+.kosten img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.plus-minus {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.wert {
+  margin-right: 1rem;
+}
+
+.einkaufen {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+#shop {
+  position: absolute;
+  right: 5%;
+  bottom: 1%;
+  width: 14%;
+}
+
+#stein-minen-menu {
+  display: none;
+}
+
+.pause, .arbeitzeit-anzeige {
+  position: absolute;
+  background-color: white;
+  right:  0;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.pause p ,.arbeitzeit-anzeige p {
+  color: black;
+  margin-right: 0.5rem;
+  margin: 0 1rem;
+}
+
+.pause img, .arbeitzeit-anzeige img {
+  width: 2rem;
+}
