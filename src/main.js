@@ -25,8 +25,8 @@ function mittagPauseKleiner(){
 upgradeKaufbarMachen(arbeitszeitElement, 0, 20, () =>{} , 20, mineÖffnen);
 upgradeKaufbarMachen(mittagspauseElement, 200,  -20, mittagPauseKleiner, null, () =>{});
 
-mineÖffnen();
-steinMineBetreten();
+// mineÖffnen();
+// steinMineBetreten();
 
 
 // Tutorial einbauen | Schlösser an die Minen bevor man da rein darf

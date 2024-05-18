@@ -156,6 +156,13 @@ p {
   width: 14%;
 }
 
+#markt{
+  position: absolute;
+  left: 5%;
+  bottom: 1%;
+  width: 14%;
+}
+
 #stein-minen-menu {
   display: none;
 }
