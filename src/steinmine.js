@@ -66,11 +66,11 @@ function platziereErz(reihe, spalte){
     let verkleinern = 0;
     function abbauen(){
         verkleinern += alles.abbauKraft;
-        erz.groesse = "calc(5% - " + verkleinern + "px)";
-        if(verkleinern > 80){
+        erz.groesse = "calc(5rem - " + verkleinern + "px)";
+        if(verkleinern > 50){
             erzBild.onclick = null;
             erz.src = "bilder/partikel.png"
-            erz.groesse = "6%";
+            erz.groesse = "5rem";
 
             let id = setInterval(wolkeVerschwinden, 100);
             function wolkeVerschwinden(){
