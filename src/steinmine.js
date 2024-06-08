@@ -5,6 +5,7 @@ function zufaelligesErz(erzBild){
     erzBild.classList.add("erz");
 
     let erz = {
+        name: '',
         wert: 0,
         haerte: 0,
         set src(value){
@@ -29,18 +30,22 @@ function zufaelligesErz(erzBild){
     }   
 
     if (typ < 500) {
+        erz.name = "stein";
         erz.src = "bilder/stein.png";
         erz.haerte = 10;
         erz.wert = 1;
     } else if (typ < 900){
+        erz.name = "kohle";
         erz.src = "bilder/kohle.png";
         erz.haerte = 8;
         erz.wert = 10;
     } else if (typ < 999){
+        erz.name = "eisen";
         erz.src = "bilder/eisen.png";
         erz.haerte = 12;
         erz.wert = 25;
     }else{
+        erz.name = "saphire";
         erz.src = "bilder/saphire.png";
         erz.haerte = 20;
         erz.wert = 250;
@@ -76,6 +81,7 @@ function platziereErz(reihe, spalte){
             function wolkeVerschwinden(){
                 erz.opacity -= 0.1;
                 if(erz.opacity < 0){
+                    alles[erz.name] += 1;
                     steinWand.removeChild(erzBild);
                     if(steinWand.children.length == 0){
                         erstelleUndPlatziereErze();
