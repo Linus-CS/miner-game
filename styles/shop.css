@@ -1,3 +1,12 @@
 .shop-container{
   display: flex;
 }
+
+.shop-header{
+    display: flex;
+}
+
+.back{
+    filter: invert(100%);
+    margin: 30px;
+}
