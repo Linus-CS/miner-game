@@ -7,7 +7,7 @@ for (let i = 0; i <= 5; i++) {
 
 let upgrades = document.getElementsByClassName("upgrade");
 let arbeitszeitElement = upgrades[0];
-let mittagspauseElement = upgrades[1]
+let mittagspauseElement = upgrades[1];
 
 function mineÖffnen(){
     if (alles.pause == 0){
