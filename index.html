@@ -7,6 +7,7 @@
     <title>Miner's Legacy</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/stein-mine.css">
+    <link rel="stylesheet" href="styles/shop.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="src/steinmine.js" defer></script>
     <script src="src/speicher.js" defer></script>
@@ -24,13 +25,36 @@
             </div>
 
             <img class="banner" src="bilder/banner.png">
-            
+
             <div class="pause">
                 <p id="pause">Pause zuende!</p>
                 <img src="bilder/stoppuhr.png">
             </div>
         </header>
         <main>
+            <div class="minen">
+                <img src="bilder/mine1.png" class="mine" id="stein-mine">
+                <img src="bilder/mine2.png" class="mine">
+            </div>
+        </main>
+        <footer>
+            <img id="markt" src="bilder/markt.png">
+            <img class="banner" src="bilder/banner2.png">
+            <img id="shop" src="bilder/shop.png">
+        </footer>
+    </div>
+    <div id="stein-minen-menu">
+        <link rel="preload" as="image" href="bilder/partikel.png">
+        <div class="arbeitzeit-anzeige">
+            <p id="arbeit">20</p>
+            <img src="bilder/stoppuhr.png">
+        </div>
+        <div id="stein-wand"></div>
+    </div>
+
+    <div id="shop-menu">
+        <h1>Shop</h1>
+        <div class="shop-container">
             <div class="box">
                 <h3>Upgrades</h3>
                 <div class="upgrade">
@@ -52,12 +76,6 @@
                     <img class="plus-minus" src="bilder/minus.png">
                 </div>
             </div>
-
-            <div class="minen">
-                <img src="bilder/mine1.png" class="mine" id="stein-mine">
-                <img src="bilder/mine2.png" class="mine">
-            </div>
-
             <div class="box">
                 <h3>Spitzhacken</h3>
                 <div class="spitzhacke">
@@ -122,20 +140,7 @@
                 </div>
                 <!-- Dynamit vllt als Boost im shoop kaufen 1 , 5 oder 10er pack -->
             </div>
-        </main>
-        <footer>
-            <img id="markt" src="bilder/markt.png">
-            <img class="banner" src="bilder/banner2.png">
-            <img id="shop" src="bilder/shop.png">
-        </footer>
-    </div>
-    <div id="stein-minen-menu">
-        <link rel="preload" as="image" href="bilder/partikel.png">
-        <div class="arbeitzeit-anzeige">
-            <p id="arbeit">20</p>
-            <img src="bilder/stoppuhr.png">
         </div>
-        <div id="stein-wand"></div>
     </div>
 </body>
 

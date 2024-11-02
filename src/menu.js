@@ -2,7 +2,9 @@ const steinMine = document.getElementById("stein-mine");
 const hauptmenu = document.getElementById("hauptmenu");
 const minenMenu = document.getElementById("minen-menu");
 const steinMinenMenu = document.getElementById("stein-minen-menu");
+const shopMenu = document.getElementById("shop-menu");
 const arbeit = document.getElementById("arbeit");
+const shopIcon = document.getElementById("shop");
 
 function startMittagsPause(pauseWert){
     alles.pause = pauseWert;
@@ -41,10 +43,17 @@ function steinMineBetreten(){
 }
 
 function hauptMenuBetreten(){
-    hauptmenu.style.display = "block"
-    steinMinenMenu.style.display = "none";
+    hauptmenu.style.display = "block";
+    steinMinenMenu.style.display = "none";          
+    shopMenu.style.display = "none";
     alles.steinMineOffen = false;
+}
+
+function shopBetreten(){
+    hauptmenu.style.display = "none";
+    shopMenu.style.display = "block";                
 }
 
 
 steinMine.onclick = steinMineBetreten;
+shopIcon.onclick = shopBetreten;    
